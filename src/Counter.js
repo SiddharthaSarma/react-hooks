@@ -4,9 +4,12 @@ const Counter = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <span>Hello world</span>
+      <span>{count}</span>
       <button className="pure-button" onClick={() => setCount(count + 1)}>
-        {count}
+        +
+      </button>
+      <button className="pure-button" onClick={() => setCount(count - 1)}>
+        -
       </button>
     </div>
   );
