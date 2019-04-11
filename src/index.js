@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Counter from './Counter';
+import Bulb from './Bulb';
 
 function App() {
   return (
-    <div>
-      <Counter />
+    <div className="pure-g">
+      <div className="pure-u-1">
+        <Counter />
+      </div>
+      <div className="pure-u-1">
+        <Bulb />
+      </div>
+      <div className="pure-u-1">
+        <Counter />
+      </div>
     </div>
   );
 }
